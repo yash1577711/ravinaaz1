@@ -52,6 +52,14 @@
     "circled_collections": {
       "type": "circled-collections",
       "blocks": {
+        "collection_J9cqKc": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "link": "",
+            "collection": ""
+          }
+        },
         "collection_1": {
           "type": "collection",
           "settings": {
@@ -78,6 +86,7 @@
         }
       },
       "block_order": [
+        "collection_J9cqKc",
         "collection_1",
         "collection_2",
         "collection_3"
