@@ -1,0 +1,75 @@
+<div class="circled-collections section-{{ section.id }}-padding">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.title }}</h2>
+    {%- endif -%}
+    
+    <div class="circled-collections__grid" style="display: flex; gap: 20px; overflow-x: auto; padding: 20px 0; justify-content: center;">
+      {%- for block in section.blocks -%}
+        <div class="circled-collection__item" style="text-align: center; flex: 0 0 auto;">
+          <a href="{{ block.settings.collection.url }}" style="text-decoration: none; color: inherit;">
+            <div class="circled-collection__image" style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; margin: 0 auto 10px auto; border: 2px solid {{ section.settings.border_color }};">
+              {%- if block.settings.collection.image -%}
+                <img src="{{ block.settings.collection.image | image_url: width: 150 }}" alt="{{ block.settings.collection.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+              {%- else -%}
+                {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <span class="circled-collection__title">{{ block.settings.collection.title | default: 'Collection' }}</span>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Circled Collections",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Shop by Category",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Circle Border Color",
+      "default": "#E7B8B7"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Circled Collections",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+<div class="instagram-embed section-{{ section.id }}-padding" style="background-color: {{ section.settings.bg_color }};">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <h2 class="title inline-richtext {{ section.settings.heading_size }}" style="text-align: center;">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    <div class="instagram-embed__container" style="display: flex; justify-content: center; margin-top: 30px;">
+      {%- if section.settings.embed_code != blank -%}
+        {{ section.settings.embed_code }}
+      {%- else -%}
+        <div style="padding: 50px; border: 2px dashed #ccc; text-align: center; width: 100%; max-width: 600px;">
+          <p>Please paste your Instagram embed code in the section settings.</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Instagram Video Embed",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Follow Us on Instagram",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "html",
+      "id": "embed_code",
+      "label": "Instagram Embed Code",
+      "info": "Go to an Instagram post, click the 3 dots, select 'Embed', and paste the code here."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram Video Embed"
+    }
+  ]
+}
+{% endschema %}

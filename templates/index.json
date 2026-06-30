@@ -6,16 +6,16 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Welcome to Our Store",
             "heading_size": "h0"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop Now",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -39,37 +39,110 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "circled_collections": {
+      "type": "circled-collections",
+      "blocks": {
+        "collection_1": {
+          "type": "collection"
+        },
+        "collection_2": {
+          "type": "collection"
+        },
+        "collection_3": {
+          "type": "collection"
+        }
+      },
+      "block_order": [
+        "collection_1",
+        "collection_2",
+        "collection_3"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "title": "Shop by Category",
+        "border_color": "#E7B8B7"
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "settings": {
         "color_scheme": "scheme-1",
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "instagram_embed": {
+      "type": "instagram-embed",
+      "settings": {
+        "title": "Follow Us on Instagram",
+        "bg_color": "#ffffff"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Amazing quality and fast shipping! I love it.",
+            "author": "Sarah M."
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "The best purchase I have made this year.",
+            "author": "John D."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2"
+      ],
+      "settings": {
+        "title": "What Our Customers Say",
+        "bg_color": "#f9f9f9",
+        "accent_color": "#E7B8B7"
+      }
+    },
+    "achievements": {
+      "type": "achievements",
+      "blocks": {
+        "achievement_1": {
+          "type": "achievement",
+          "settings": {
+            "title": "10K+ Orders",
+            "text": "<p>Delivered worldwide</p>"
+          }
+        },
+        "achievement_2": {
+          "type": "achievement",
+          "settings": {
+            "title": "Award Winning",
+            "text": "<p>Best New Brand 2023</p>"
+          }
+        }
+      },
+      "block_order": [
+        "achievement_1",
+        "achievement_2"
+      ],
+      "settings": {
+        "title": "Our Achievements",
+        "bg_color": "#ffffff",
+        "accent_color": "#E7B8B7"
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "circled_collections",
+    "featured_product",
+    "instagram_embed",
+    "testimonials",
+    "achievements"
   ]
 }
