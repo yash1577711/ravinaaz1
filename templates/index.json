@@ -39,10 +39,10 @@
         "image": "shopify://shop_images/Ravinaaz_Banner_1.jpg",
         "image_overlay_opacity": 40,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
@@ -55,18 +55,24 @@
         "collection_1": {
           "type": "collection",
           "settings": {
+            "title": "",
+            "link": "",
             "collection": ""
           }
         },
         "collection_2": {
           "type": "collection",
           "settings": {
+            "title": "",
+            "link": "",
             "collection": ""
           }
         },
         "collection_3": {
           "type": "collection",
           "settings": {
+            "title": "",
+            "link": "",
             "collection": ""
           }
         }
@@ -132,7 +138,7 @@
       "settings": {
         "title": "Follow Us on Instagram",
         "bg_color": "#ffffff",
-        "embed_code": ""
+        "video_url": ""
       }
     },
     "testimonials": {
@@ -161,27 +167,6 @@
         "title": "What Our Customers Say",
         "bg_color": "#f9f9f9",
         "accent_color": "#e7b8b7"
-      }
-    },
-    "manual_products": {
-      "type": "manual-products",
-      "blocks": {
-        "product_1": {
-          "type": "product_block"
-        },
-        "product_2": {
-          "type": "product_block"
-        }
-      },
-      "block_order": [
-        "product_1",
-        "product_2"
-      ],
-      "settings": {
-        "title": "Selected Products",
-        "bg_color": "#ffffff",
-        "columns_desktop": 4,
-        "columns_mobile": "2"
       }
     },
     "achievements": {
@@ -217,7 +202,6 @@
     "image_banner",
     "circled_collections",
     "featured_collection_jhY3Xq",
-    "manual_products",
     "featured_product",
     "instagram_embed",
     "testimonials",
