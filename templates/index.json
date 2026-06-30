@@ -163,6 +163,27 @@
         "accent_color": "#e7b8b7"
       }
     },
+    "manual_products": {
+      "type": "manual-products",
+      "blocks": {
+        "product_1": {
+          "type": "product_block"
+        },
+        "product_2": {
+          "type": "product_block"
+        }
+      },
+      "block_order": [
+        "product_1",
+        "product_2"
+      ],
+      "settings": {
+        "title": "Selected Products",
+        "bg_color": "#ffffff",
+        "columns_desktop": 4,
+        "columns_mobile": "2"
+      }
+    },
     "achievements": {
       "type": "achievements",
       "blocks": {
@@ -196,6 +217,7 @@
     "image_banner",
     "circled_collections",
     "featured_collection_jhY3Xq",
+    "manual_products",
     "featured_product",
     "instagram_embed",
     "testimonials",

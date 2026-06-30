@@ -5,11 +5,21 @@
     {%- endif -%}
 
     <div class="instagram-embed__container" style="display: flex; justify-content: center; margin-top: 30px;">
-      {%- if section.settings.embed_code != blank -%}
-        {{ section.settings.embed_code }}
+      {%- if section.settings.video_url != blank -%}
+        {%- assign insta_url = section.settings.video_url | split: '?' | first -%}
+        <iframe 
+          src="{{ insta_url }}embed" 
+          width="400" 
+          height="480" 
+          frameborder="0" 
+          scrolling="no" 
+          allowtransparency="true" 
+          allow="encrypted-media"
+          style="border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        </iframe>
       {%- else -%}
-        <div style="padding: 50px; border: 2px dashed #ccc; text-align: center; width: 100%; max-width: 600px;">
-          <p>Please paste your Instagram embed code in the section settings.</p>
+        <div style="padding: 50px; border: 2px dashed #ccc; text-align: center; width: 100%; max-width: 400px; border-radius: 8px;">
+          <p>Please paste your Instagram Reel or Post Link here.</p>
         </div>
       {%- endif -%}
     </div>
@@ -35,10 +45,10 @@
       "default": "#ffffff"
     },
     {
-      "type": "html",
-      "id": "embed_code",
-      "label": "Instagram Embed Code",
-      "info": "Go to an Instagram post, click the 3 dots, select 'Embed', and paste the code here."
+      "type": "url",
+      "id": "video_url",
+      "label": "Instagram Post/Reel Link",
+      "info": "Paste the link to your Instagram post or reel (e.g. https://www.instagram.com/p/ABC123/)"
     }
   ],
   "presets": [
