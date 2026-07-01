@@ -142,14 +142,6 @@
         "padding_bottom": 36
       }
     },
-    "instagram_embed": {
-      "type": "instagram-embed",
-      "settings": {
-        "title": "Follow Us on Instagram",
-        "bg_color": "#ffffff",
-        "video_url": ""
-      }
-    },
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -177,34 +169,6 @@
         "bg_color": "#f9f9f9",
         "accent_color": "#e7b8b7"
       }
-    },
-    "achievements": {
-      "type": "achievements",
-      "blocks": {
-        "achievement_1": {
-          "type": "achievement",
-          "settings": {
-            "title": "10K+ Orders",
-            "text": "<p>Delivered worldwide</p>"
-          }
-        },
-        "achievement_2": {
-          "type": "achievement",
-          "settings": {
-            "title": "Award Winning",
-            "text": "<p>Best New Brand 2023</p>"
-          }
-        }
-      },
-      "block_order": [
-        "achievement_1",
-        "achievement_2"
-      ],
-      "settings": {
-        "title": "Our Achievements",
-        "bg_color": "#ffffff",
-        "accent_color": "#e7b8b7"
-      }
     }
   },
   "order": [
@@ -212,8 +176,6 @@
     "circled_collections",
     "featured_collection_jhY3Xq",
     "featured_product",
-    "instagram_embed",
-    "testimonials",
-    "achievements"
+    "testimonials"
   ]
 }
