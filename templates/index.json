@@ -55,6 +55,16 @@
         "collection_J9cqKc": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/Solid_Perfume.jpg",
+            "title": "",
+            "link": "",
+            "collection": ""
+          }
+        },
+        "collection_Jr6D9b": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/Earrings.jpg",
             "title": "",
             "link": "",
             "collection": ""
@@ -63,6 +73,7 @@
         "collection_1": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/Pendant_Set.jpg",
             "title": "",
             "link": "",
             "collection": ""
@@ -71,6 +82,7 @@
         "collection_2": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/Bracelet.jpg",
             "title": "",
             "link": "",
             "collection": ""
@@ -79,6 +91,7 @@
         "collection_3": {
           "type": "collection",
           "settings": {
+            "image": "shopify://shop_images/Necklaces_and_Choker.jpg",
             "title": "",
             "link": "",
             "collection": ""
@@ -87,6 +100,7 @@
       },
       "block_order": [
         "collection_J9cqKc",
+        "collection_Jr6D9b",
         "collection_1",
         "collection_2",
         "collection_3"
