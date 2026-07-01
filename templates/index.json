@@ -156,6 +156,7 @@
         "padding_bottom": 36
       }
     },
+
     "testimonials": {
       "type": "testimonials",
       "blocks": {
@@ -180,9 +181,10 @@
       ],
       "settings": {
         "title": "What Our Customers Say",
-        "bg_color": "#f9f9f9",
+        "bg_color": "#ffffff",
         "accent_color": "#e7b8b7"
       }
+
     }
   },
   "order": [
